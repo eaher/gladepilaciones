@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestión de Clientes</title>
+        <!-- Importar Google Font Montserrat -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gla</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#notificaciones">Envío de Notificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección 1 -->
+    <section class="container my-5" id="inicio">
+        <h2>Gestionar Cliente</h2>
+        <div class="button-group my-3">
+            <button class="btn btn-primary" id="openFormBtn">Gestionar Cliente</button>
+            <button class="btn btn-secondary" id="closeFormBtn">Cerrar</button>
+        </div>
+        <div class="iframe-container" id="formSection">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkkBkxXbiJ6tG-mjZN3rcEgAItV-TBykBB3UsHeV1EtgNBHA/viewform" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección 2 -->
+    <section class="container my-5" id="notificaciones">
+        <h2>Pantalla de Gestión</h2>
+        <div class="button-group my-3">
+            <button class="btn btn-primary" id="openSheetBtn">Consultar Cliente</button>
+            <button class="btn btn-secondary" id="closeSheetBtn">Cerrar</button>
+        </div>
+        <div class="iframe-container" id="sheetSection">
+            <iframe src="https://docs.google.com/spreadsheets/d/1Qq7p4y5KSPAvbeDLObJgcj7VNMYGBSOdQxIWjjc26xA/edit?resourcekey=&gid=712670646#gid=712670646" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
